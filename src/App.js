@@ -18,7 +18,8 @@ function App(props) {
         </div>
       </div>
       <footer>
-        Fork me <a href="https://gitgub.com/anupjha"> github </a>
+        Fork me here :{" "}
+        <a href="https://github.com/anupjha/JuStConsole"> github </a>
       </footer>
     </div>
   );
