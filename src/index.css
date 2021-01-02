@@ -1,13 +1,99 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html,
+body {
+  font-family: "Ubuntu Mono", "Montserrat", sans-serif;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+}
+
+.App-logo {
+  height: 4vmin;
+  position: relative;
+  margin-right: 6px;
+  pointer-events: none;
+}
+
+.App-text {
+  font-size: 18px;
+  margin: 4px;
+  text-decoration: red overline wavy;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+#root > div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  flex: 0 0 auto;
+  padding: 0 2px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+footer {
+  flex: 0 0 auto;
+  font-size: 12px;
+  padding: 12px 20px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.main {
+  flex: 1 1 auto;
+  display: flex;
+}
+
+.child-content {
+  flex: 1 1 auto;
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+a {
+  color: red;
+}
+
+a:hover,
+a:active,
+a.active {
+  color: #42a5f5;
+}
+
+pre {
+  white-space: pre;
+}
+
+.my-pane {
+  background-color: #202124;
+  margin: 2px;
+}
+
+.my-iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.my-iframe .my-iframe-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.my-iframe iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
 }

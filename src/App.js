@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import PropTypes from "prop-types";
+import logo from "./logo.svg";
+import Layout from "./components/Layout";
 
-function App() {
+function App(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    <div>
+      <header>
+        <p className="App-text">
+          <img src={logo} className="App-logo" alt="logo" />
+          Console
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+      <div className="main">
+        <div className="child-content">
+          <Layout />
+        </div>
+      </div>
+      <footer>
+        Fork me <a href="https://gitgub.com/anupjha"> github </a>
+      </footer>
     </div>
   );
 }
+
+App.propTypes = {
+  children: PropTypes.element.isRequired,
+};
 
 export default App;
